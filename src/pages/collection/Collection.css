@@ -1,0 +1,44 @@
+.collection{
+    margin: 8rem 2rem 2rem 2rem;
+}
+
+.collection-form-card {
+    background-color: #f0f4f1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collection-form-card h1 {
+    text-align: center;
+    color: #3a5a40;
+}
+.collection-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    padding: 0.5rem;
+    border: 1px solid #3a5a40;
+    border-radius: 4px;
+}
+input:focus {
+  outline: none;
+}
+
+.collection-form-btn{
+    margin-top: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+.collection-form-btn button {
+    padding: 0.5rem 1rem;
+    background-color: #3a5a40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+.bHero {
+    position: relative;
+}
+
+.bHero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bHero-content {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+}
+
+.bHero-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.bHero-content p {
+    line-height: 1.2;
+}
+
+/* QUERIES */
+@media (max-width: 767px) {
+
+    .bHero-content {
+        top: 59%;
+        left: 35%;
+    }
+
+    .bHero-content h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .bHero-content p {
+        line-height: 1.1;
+        font-size: 0.8rem;
+    }
+}
+
+@media (width:320px){
+  .bHero-content {
+        top: 51%;
+    }
+    .bHero-content p {
+        line-height: 1;
+        font-size: 0.75rem;
+    }
+}

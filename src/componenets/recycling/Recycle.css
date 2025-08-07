@@ -1,0 +1,83 @@
+.recycle-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.recycle-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recycle-text h2 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  text-align: left;
+  color: #333;
+}
+
+.recycle-text p {
+  font-size: 1.57rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Image Overlay Section */
+.recycle-image-wrapper {
+  position: relative;
+  flex: 1;
+  width: fit-content;
+  max-width: 100%;
+  height: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* QUERIES */
+@media (max-width: 768px) {
+  .recycle-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .recycle-text h2 {
+    font-size: 1.65rem;
+  }
+
+  .recycle-text p {
+    font-size: 1.2rem;
+  }
+
+  .main-image {
+    border-radius: 0px;
+  }
+
+  .overlay-image {
+    bottom: 5px;
+    left: 12px;
+    width: 95px;
+  }
+
+}
